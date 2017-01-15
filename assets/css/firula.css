@@ -1,0 +1,24 @@
+.intro-photo:before, .intro-photo:after {
+	--border: 3px;
+
+	content: '';
+	width: var(--size);
+	height: var(--size);
+	border: var(--border) solid;
+	border-radius: 50%;
+	position: absolute;
+	top: calc((100% - var(--size) - (var(--border) * 2)) / 2);
+	left: calc((100% - var(--size) - (var(--border) * 2)) / 2);
+}
+.intro-photo:before {
+	--size: 90%;
+
+	border-color: var(--color);
+	border-top-color: transparent;
+}
+.intro-photo:after {
+	--size: 110%;
+
+	border-color: transparent;
+	border-bottom-color: var(--color);
+}

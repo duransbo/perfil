@@ -1,0 +1,277 @@
+@font-face {
+	font-family: 'Icon';
+	src: url('../font/fontawesome-webfont.eot?v=4.3.0');
+	src: url('../font/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('../font/fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('../font/fontawesome-webfont.woff?v=4.3.0') format('woff'), url('../font/fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('../font/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+}
+@font-face {
+	font-family: 'Inconsolata';
+	src: url('../font/Inconsolata.otf');
+}
+
+
+
+.-container {
+	padding: 50px 5%;
+	justify-content: space-between;
+}
+.-icon {
+	font-family: 'Icon';
+	text-align: center;
+}
+
+
+
+body {
+	font-size: 1.8rem;
+	font-family: 'Inconsolata';
+}
+h1 {
+	width: 100%;
+	text-transform: uppercase;
+}
+h2 {
+	width: 100%;
+	color: #a60;
+}
+p {
+	width: 100%;
+	line-height: 150%;
+}
+
+
+
+#intro {
+	height: 350px;
+	background-color: #111;
+	color: #a60;
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+}
+#intro:after {
+	content: '';
+	border: solid transparent;
+	border-width: 25px 75px 0 75px;
+	border-top-color: #111;
+	z-index: 2;
+	position: absolute;
+	bottom: calc(25px * -1);
+	left: calc(50% - 75px);
+}
+.intro-photo {
+	width: 200px;
+	height: 200px;
+	border: 5px solid #a60;
+	border-radius: 50%;
+}
+.intro-photo:before, .intro-photo:after {
+	content: '';
+	border: 3px solid;
+	border-radius: 50%;
+	position: absolute;
+}
+.intro-photo:before {
+	width: 90%;
+	height: 90%;
+	border-color: #a60;
+	border-top-color: transparent;
+	top: calc((10% - (3px * 2)) / 2);
+	left: calc((10% - (3px * 2)) / 2);
+}
+.intro-photo:after {
+	width: 113%;
+	height: 113%;
+	border-color: transparent;
+	border-bottom-color: #a60;
+	top: calc((-13% - (3px * 2)) / 2);
+	left: calc((-13% - (3px * 2)) / 2);
+}
+.intro-img {
+	width: 100%;
+	border-radius: 50%;
+}
+
+
+
+.attribute {
+	color: #a60;
+}
+
+
+
+#ideology {
+	background-color: #111;
+	color: #fff;
+}
+
+
+
+#objetive {
+	background-color: #a60;
+}
+.objetive {
+	color: #fff;
+}
+
+
+
+.feature-item {
+	margin-top: 30px;
+	text-align: center;
+}
+.feature-icon {
+	height: 150px;
+	margin: 10px 0;
+	justify-content: center;
+	align-items: center;
+}
+.feature-img {
+	max-width: 75%;
+	max-height: 100%;
+}
+
+
+
+#experience {
+	background-color: #111;
+	color: #fff;
+}
+.experience-type {
+	margin-top: 30px;
+}
+.experience-item {
+	margin-top: 15px;
+}
+.experience-date {
+	position: relative;
+	text-align: right;
+}
+.experience-date:before {
+	content: '';
+	width: 100%;
+	border: solid #a60;
+	border-width: 2px 0 0 0;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	transform: rotateZ(-3deg);
+}
+
+
+
+.technique-type {
+	margin-top: 30px;
+}
+.technique-item {
+	width: 45%;
+	margin-top: 10px;
+	margin-left: 5%;
+	display: list-item;
+}
+
+
+
+/*#portfolio {
+	padding-bottom: 50px;
+	background-color: #111;
+	color: #fff;
+}
+.portfolio-item {
+	height: 300px;
+	background-color: rgba(255, 0, 0, .5);
+}*/
+
+
+
+@media all and (min-width: 450px) {
+	.technique-item {
+		width: 28%;
+	}
+}
+@media all and (min-width: 500px) {
+	.feature-item {
+		width: 45%;
+	}
+
+	.experience-type {
+		width: 50%;
+		margin: 50px 0 0 0;
+	}
+	.experience-item {
+		align-items: center;
+		align-content: center;
+	}
+	.experience-item:after {
+		content: '';
+		width: 5px;
+		height: 100%;
+		border: solid #a60;
+		position: absolute;
+		top: 0;
+	}
+	.experience-item:last-child:after {
+		border-bottom-width: 0px !important;
+	}
+	.experience-academics {
+		padding-right: 30px;
+	}
+	.experience-academics .experience-item:after {
+		border-width: 2px 0 2px 2px;
+		right: -25px;
+	}
+	.experience-pratics {
+		padding-left: 20px;
+	}
+	.experience-pratics .experience-item:after {
+		border-width: 2px 2px 2px 0;
+		left: -25px;
+	}
+	.experience-ensino-medio {
+		margin-top: calc(15px * 8);
+		height: calc(15px * 38);
+	}
+	.experience-ensino-superior {
+		margin-top: calc(15px * 1);
+		height: calc(15px * 20);
+	}
+	.experience-web-design {
+		margin-top: calc(15px * 1);
+		height: calc(15px * 12);
+	}
+	.experience-agencia-zum {
+		margin-top: calc(15px * 4);
+		height: calc(15px * 33);
+	}
+	.experience-grupo-ambplan {
+		margin-top: calc(15px * 9);
+		height: calc(15px * 8);
+	}
+}
+
+
+
+@media all and (min-width: 750px) {
+	.feature-item {
+		width: 30%;
+	}
+
+	.technique-item {
+		width: 20%;
+	}
+}
+
+
+
+@media all and (min-width: 900px) {
+	.technique-item {
+		width: 15%;
+	}
+}
+
+
+
+@media all and (min-width: 1100px) {
+	.technique-item {
+		width: 10%;
+	}
+}
