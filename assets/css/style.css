@@ -93,7 +93,7 @@ p {
 
 
 
-.attribute {
+.attribute-title {
 	color: #a60;
 }
 
@@ -171,21 +171,17 @@ p {
 
 
 
-/*#portfolio {
-	padding-bottom: 50px;
-	background-color: #111;
-	color: #fff;
-}
-.portfolio-item {
-	height: 300px;
-	background-color: rgba(255, 0, 0, .5);
-}*/
-
-
-
-@media all and (min-width: 450px) {
+@media all and (min-width: 460px) {
 	.technique-item {
 		width: 28%;
+	}
+
+	.attribute-title {
+		text-align: right;
+	}
+	.attribute {
+		width: 48%;
+		display: inline-block;
 	}
 }
 @media all and (min-width: 500px) {
@@ -271,6 +267,10 @@ p {
 
 
 @media all and (min-width: 1100px) {
+	.feature-item {
+		width: 23%;
+	}
+
 	.technique-item {
 		width: 10%;
 	}
