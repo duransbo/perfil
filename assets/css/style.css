@@ -106,10 +106,10 @@ p {
 
 
 
-#objetive {
+.objective {
 	background-color: #a60;
 }
-.objetive {
+.objective-text {
 	color: #fff;
 }
 
@@ -159,19 +159,30 @@ p {
 
 
 
+#technique {
+	text-align: center;
+}
+.technique-icon {
+	justify-content: center;
+}
 .technique-type {
 	margin-top: 30px;
 }
 .technique-item {
 	width: 45%;
-	margin-top: 10px;
+	margin-top: 20px;
 	margin-left: 5%;
-	display: list-item;
+	display: block;
+}
+.technique-item:before {
+	content: '> ';
+	color: #a60;
 }
 
 
 
 @media all and (min-width: 460px) {
+
 	.technique-item {
 		width: 28%;
 	}
@@ -183,8 +194,38 @@ p {
 		width: 48%;
 		display: inline-block;
 	}
+
 }
+
 @media all and (min-width: 500px) {
+
+	#ideology {
+		padding-bottom: 250px;
+	}
+
+	#objective {
+		height: 0px;
+		justify-content: center;
+		align-items: center;
+	}
+	.objective {
+		width: 300px;
+		height: 300px;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		transform: rotateZ(45deg);
+	}
+	.objective-content {
+		width: 66%;
+		height: 66%;
+		transform: rotateZ(-45deg);
+		text-align: center;
+	}
+
+	#feature {
+		padding-top: 200px;
+	}
 	.feature-item {
 		width: 45%;
 	}
@@ -242,11 +283,26 @@ p {
 		margin-top: calc(15px * 9);
 		height: calc(15px * 8);
 	}
+
+	#technique {
+		text-align: left;
+	}
+	.technique-icon {
+		width: 150px;
+	}
+	.technique-level {
+		max-width: calc(100% - 150px);
+	}
+	.technique-level p {
+		margin-top: 0;
+	}
+
 }
 
 
 
 @media all and (min-width: 750px) {
+
 	.feature-item {
 		width: 30%;
 	}
@@ -254,24 +310,15 @@ p {
 	.technique-item {
 		width: 20%;
 	}
+
 }
 
 
 
 @media all and (min-width: 900px) {
+
 	.technique-item {
 		width: 15%;
 	}
-}
 
-
-
-@media all and (min-width: 1100px) {
-	.feature-item {
-		width: 23%;
-	}
-
-	.technique-item {
-		width: 10%;
-	}
 }
